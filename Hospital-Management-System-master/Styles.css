@@ -1,0 +1,243 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f7;
+  margin: 0;
+  padding: 0;
+}
+
+.management-container,
+.payment-container,
+form,
+.popup,
+#section3 form {
+  background-color: #f0f8ff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.payment-container {
+  transition: transform 0.3s ease-in-out;
+}
+
+.payment-container:hover {
+  transform: scale(1.02);
+}
+
+h2,
+#payment-details h3,
+#section2 h1,
+#section3 h1,
+#section3 h2 {
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#section1 h1{
+  color: #fcfcfc;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form,
+#section3 form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+input[type="text"],
+select,
+input[type="date"] {
+  padding: 12px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out;
+  line-height: 1.5;
+}
+
+select option {
+  padding: 12px;
+  line-height: 4;
+}
+
+input[type="text"]:focus,
+select:focus,
+input[type="date"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+select {
+  appearance: none;
+}
+
+button[type="submit"],
+#confirm-no,
+#confirm-yes {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover,
+#confirm-no:hover,
+#confirm-yes:hover {
+  background-color: #0056b3;
+}
+
+#payment-details,
+#section1,
+#section2 {
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#section1,
+#section2 {
+  height: 730px;
+}
+
+#section1,#section2 {
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+#section1 #home table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 200px;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200px;
+  font-style: normal;
+  color: whitesmoke;
+}
+
+#section1 #home img {
+  transition: opacity 0.3s ease;
+}
+
+#section1 #home img:hover {
+  opacity: 0.7;
+}
+
+#section2 table,
+#section2 h1 {
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+#section2 table {
+  padding-top: 150px;
+}
+
+#section2 a {
+  text-decoration: none;
+  color: rgb(2, 2, 2);
+}
+
+#section2 img {
+  display: block;
+  margin: auto;
+}
+
+#section2 td:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#payment-details:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Define the hidden class */
+.hidden {
+  display: none;
+}
+
+/* Style for pop-up windows */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: center; 
+}
+
+.success-mes {
+color: green;
+font-size: 14px;
+margin-top: 5px;
+text-align: center; 
+}
